@@ -1,0 +1,77 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+  <div class="outer-form">
+    <form
+      action="/listings"
+      method="POST"
+      class="new-form needs-validation"
+      novalidate
+      enctype="multipart/form-data">
+      <h2>Create a new listing</h2>
+      <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input
+          type="text"
+          placeholder="Add a title"
+          name="listing[title]"
+          class="form-control"
+          required />
+        <div class="valid-feedback">Looks good!</div>
+      </div>
+      <div class="mb-3">
+        <label for="desscription" class="form-label">Description</label>
+        <textarea
+          name="listing[description]"
+          id=""
+          cols="30"
+          rows="2"
+          class="form-control"
+          required></textarea>
+        <div class="invalid-feedback">Please provide short description.</div>
+      </div>
+      <div class="mb-3">
+        <label for="image" class="form-label">Upload Listing Image</label>
+        <input type="file" name="listing[image]" class="form-control" />
+      </div>
+      <div class="row">
+        <div class="mb-3 col-md-4">
+          <label for="price" class="form-label">Price</label>
+          <input
+            type="number"
+            placeholder="1500"
+            name="listing[price]"
+            class="form-control"
+            min="500"
+            required />
+          <div class="invalid-feedback">
+            Please provide a valid price min 500.
+          </div>
+        </div>
+
+        <div class="mb-3 col-md-8">
+          <label for="country" class="form-label">Country</label>
+          <input
+            type="text"
+            placeholder="India"
+            name="listing[country]"
+            class="form-control"
+            required />
+          <div class="invalid-feedback">Please provide a valid country.</div>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="location" class="form-label">Location</label>
+        <input
+          type="text"
+          placeholder="Hyderabad, Andhra Pradesh"
+          name="listing[location]"
+          class="form-control"
+          required />
+        <div class="invalid-feedback">Please provide a valid city.</div>
+      </div>
+      <br /><br />
+      <button class="btn btn-dark btn-red">Add</button>
+      <br /><br />
+    </form>
+  </div>
+</body>

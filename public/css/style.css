@@ -1,0 +1,179 @@
+* {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1;
+}
+
+.navbar {
+  height: 5rem;
+  background-color: white;
+}
+
+.navbar-collapse {
+  background-color: white;
+}
+
+.fa-compass {
+  color: #fe424d;
+  font-size: 2rem;
+}
+
+.nav-link {
+  color: #222222;
+}
+
+.f-info {
+  background-color: #ebebeb;
+  height: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.f-info-links a {
+  color: #222222;
+  text-decoration: none;
+}
+
+.f-info-links a:hover {
+  text-decoration: underline;
+}
+
+.f-info-socials i {
+  font-size: 1.3rem;
+  margin-right: 0.3rem;
+}
+
+/* Cards */
+.listing-card {
+  border: none;
+  margin-bottom: 2rem;
+}
+
+.card-img-top {
+  border-radius: 10px;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+
+.card-body {
+  padding: 0;
+}
+.card-img-overlay {
+  opacity: 0;
+}
+
+.card-img-overlay:hover {
+  background-color: white;
+  opacity: 0.2;
+}
+
+.listing-link {
+  text-decoration: none;
+}
+
+.new-form {
+  width: 70%;
+}
+
+.outer-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-red {
+  background-color: #fe424d;
+  border: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* show card */
+.show-image {
+  height: 60vh;
+  border-radius: 10px;
+  width: 72vw;
+  /* border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px; */
+}
+
+.show-description {
+  font-weight: 550;
+  font-size: larger;
+  margin-top: 0.8rem;
+}
+
+.btns {
+  display: flex;
+  margin-right: 2rem;
+  justify-content: space-between;
+}
+
+#map {
+  height: 500px;
+  width: 75vw;
+}
+
+.marker {
+  display: block;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+}
+
+.mapboxgl-popup {
+  max-width: 400px;
+  font: 12px/20px "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+/* index page css */
+.newHome {
+  border: 1px solid rgb(248, 247, 247);
+  border-radius: 50px;
+}
+
+.newHome:hover {
+  background-color: rgb(149, 145, 145);
+  color: white;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  height: 6.25rem;
+}
+
+.filter {
+  margin-top: 1rem;
+  margin-right: 2rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.6;
+  height: 3.5rem;
+}
+
+.filter:hover {
+  cursor: pointer;
+  opacity: 1;
+  border-bottom: 2px solid black;
+}
+
+.filter p {
+  margin-bottom: 0;
+}
